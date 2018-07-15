@@ -199,25 +199,22 @@ public class Deque<Item> implements Iterable<Item> {
         Deque<Integer> deque = new Deque<Integer>();
         deque.addLast(0);
         deque.addLast(1);
-        deque.removeLast()    ;
-        deque.addLast(3);
-        deque.removeLast()     ;
         deque.removeLast();
-
-
-       /* deck = new Deque<>();
+        deque.addLast(3);
+        deque.removeLast();
+        deque.removeLast();
+        deck = new Deque<>();
         deck.addFirst(4);
         deck.debug();
         deck = new Deque<>();
         deck.addLast(6);
         deck.debug();
-        Deque<Integer> deque = new Deque<Integer>();
+        deque = new Deque<Integer>();
         deque.addFirst(3);
         deque.isEmpty();
         deque.removeLast();
         deque.isEmpty();
         deque.addFirst(7);
         System.out.println(deque.removeLast());
-        */
     }
 }
