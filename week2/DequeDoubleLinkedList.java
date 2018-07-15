@@ -206,7 +206,7 @@ public class Deque<Item> implements Iterable<Item> {
         deck = new Deque<>();
         deck.addFirst(4);
         deck.debug();
-        deck = new Deque<>();
+        deck = new Deque<Integer>();
         deck.addLast(6);
         deck.debug();
         deque = new Deque<Integer>();
