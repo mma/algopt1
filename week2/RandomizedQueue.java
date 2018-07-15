@@ -60,6 +60,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
         a[currentIndex()] = null;
         n--;
+        // shrink size of array if necessary
+        if (n > 0 && n == a.length/4) resize(a.length/2);
         return item;
     }
 
@@ -112,15 +114,13 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     // unit testing (optional)
     public static void main(String[] args) {
         RandomizedQueue<Integer> randomizedQueue = new RandomizedQueue<>();
-        randomizedQueue.enqueue(4);
-        randomizedQueue.enqueue(6);
-        randomizedQueue.enqueue(7);
-        randomizedQueue.enqueue(4);
-        randomizedQueue.enqueue(6);
-        randomizedQueue.enqueue(7);
-        randomizedQueue.enqueue(4);
-        randomizedQueue.enqueue(6);
-        randomizedQueue.enqueue(7);
+        for (int i =0;i<4000;i++) {
+            randomizedQueue.enqueue(i);
+        }
+        for (int i =0;i<3998;i++) {
+            randomizedQueue.dequeue();
+        }
+        randomizedQueue.dequeue();
         Iterator<Integer> iter = randomizedQueue.iterator();
         while(iter.hasNext()) {
             System.out.println(iter.next());
