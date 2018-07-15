@@ -7,4 +7,4 @@ http://coursera.cs.princeton.edu/algs4/assignments/queues.html
 
 **Randomized queue.** A randomized queue is similar to a stack or queue, except that the item removed is chosen uniformly at random from items in the data structure. Implemented using resizing array.
 
-97% passing grade (a few memory and timing tests fail 😞 )
+100% passing grade
