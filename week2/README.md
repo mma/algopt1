@@ -1,5 +1,4 @@
-# algorithms-part1
-https://www.coursera.org/learn/algorithms-part1
+# Week 2
 
 http://coursera.cs.princeton.edu/algs4/assignments/queues.html
 
